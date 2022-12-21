@@ -1,16 +1,75 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+            body{
+                margin:0; 
+                font-family: 'Inter', sans-serif;
+            }
+
+            .allcontent{
+                display:flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            header{
+                background-color: #111023;
+                flex-grow: 1;
+            }
+
+            .container{
+                display:flex;
+                flex-grow:4;
+            }
+
+            footer{
+                background-color: #111023;
+                flex-grow: 1;
+            }
+
+            article{
+                background-color: #ffffff;
+                flex-grow: 3;
+
+            }
+
+            aside{
+                background-color: #320388;
+                flex-grow: 1;
+
+            }
+
+            nav{
+                background-color: #c22177;
+                flex-grow: 1;
+            }
+
+            .white-text{
+                padding-top:20px;
+                padding-left:20px;
+                color:white;
+                font-weight: bold;
+            }
+
+            .black-text{
+                padding-top:20px;
+                padding-left:20px;
+                color:black;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
-        <header></header>
-        <div>
+        <div class="allcontent">
+            <header class="white-text">Header</header>
             <div class="container">
-                <article></article>
-                <aside></aside>
-                <nav></nav>
+                    <article class="black-text">Article</article>
+                    <aside class="white-text">Aside</aside>
+                    <nav class="white-text">Nav</nav>
             </div>
+            <footer class="white-text">Footer</footer>
         </div>
-        <footer></footer>
+        
     </body>  
 </html>
